@@ -1,24 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     margin: 0;
     box-sizing: border-box;
     padding: 0;
 }
+
+:root{
+    font-size: 62.5%;
+    background: #0f0d13;
+}
+
 .container{
+    font-family: "Roboto", sans-serif;
     background: black;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .card-player{
     background: rgb(78, 74, 74);
     color: #fff;
     display: flex;
     flex-direction: column;
 }
+.desc-musica{
+    margin: 20px 0px 15px 0px;
+}
+.desc-musica span{
+    color: #9895a5;
+}
 .conteudo-musica p{
     font-size: 2.4rem;
 }
 .conteudo-musica span{
    font-size:1.8 rem;
+}
+.controles{
+    margin: 10px 0px 30px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.controles button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.conteiner-progresso input{
+    width: 100%;
+}
+.tempo-musica{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    opacity: 0.8;
 }
